@@ -1,0 +1,18 @@
+student = {
+    "name": "Alexa",
+    "subjects": {
+        "Math": 95,
+        "Science": 96,
+        "English": 92,
+        "History": 94,
+        "Computer Science": 93
+    }
+}
+total_marks = sum(student["subjects"].values())
+average_marks = total_marks / len(student["subjects"])
+print("Student:", student["name"])
+print("Subjects and Marks:")
+for subject, marks in student["subjects"].items():
+    print(f"{subject}: {marks}")
+print("Total Marks:", total_marks)
+print("Average Marks:", average_marks)
